@@ -1,0 +1,33 @@
+{
+  "name": "@vectosolve/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript/Node.js SDK for the VectoSolve API — vectorize images, remove backgrounds, upscale, generate logos & patterns",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vectosolve", "svg", "vectorize", "image-to-svg", "vector",
+    "remove-background", "upscale", "logo-generator", "ai", "api"
+  ],
+  "author": "VectoSolve <hello@vectosolve.com>",
+  "license": "MIT",
+  "homepage": "https://vectosolve.com/developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vectosolve/vectosolve-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/Vectosolve/vectosolve-sdk/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
