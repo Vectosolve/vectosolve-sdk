@@ -21,7 +21,7 @@ export interface UpscaleOptions {
 export interface GenerateLogoOptions {
   prompt: string
   style?: 'vector_illustration' | 'icon' | 'line_art' | 'engraving' | 'line_circuit' | 'linocut'
-  model?: 'recraftv3' | 'recraftv2'
+  model?: 'v3' | 'v2'
   colors?: string[]
   numVariants?: 1 | 2 | 4
 }
@@ -101,7 +101,7 @@ export class VectoSolve {
     return this.postJson('/generate-logo', {
       prompt: options.prompt,
       style: options.style || 'vector_illustration',
-      model: options.model || 'recraftv3',
+      model: options.model || 'v3',
       colors: options.colors,
       num_variants: options.numVariants || 1,
     })
